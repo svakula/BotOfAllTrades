@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const token = 'NjA5NjE0Nzc1OTMyMDI2OTAy.XU5zeA.CHES5tmHjiOAkp9vAAPd-bexcBE';
+const token = 'NjA5NjE0Nzc1OTMyMDI2OTAy.XU-m2g.NqQm794kHqAmTX44mHrkUyAMDnY';
 
 const client = new Discord.Client();
 //replace words with actual words that you want to send warning to
@@ -17,7 +17,7 @@ client.on('message', (msg) => {
 });
 
 client.on('ready', () => {
-    console.log('Its Online now Dumbass');
+    console.log('Bot Is Officially Online');
 });
 
 client.login(token);
