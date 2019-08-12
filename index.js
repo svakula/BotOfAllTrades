@@ -3,7 +3,7 @@ const token = 'NjA5NjE0Nzc1OTMyMDI2OTAy.XVDV5w.2OdpsqjkR7DYrm2GIxi2iY8fbpY';
 
 const client = new Discord.Client();
 
-const swords = ['word1' , 'word2' , 'word3'];
+const swords = ['fuck' , 'shit' , 'ass' , 'fucx' , 'fucxing' , 'fucking' , 'dumb' , 'study'];
 const lmaos = ['lmao' , 'lmfao' , 'lnao' , 'Imao' , 'Imfao' , 'Inao'];
 //replace words with actual words that you want to send warning to
 //replace warning with any warning but I think the current warning is pretty good
