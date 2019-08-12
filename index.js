@@ -3,12 +3,12 @@ const token = 'NjA5NjE0Nzc1OTMyMDI2OTAy.XVDV5w.2OdpsqjkR7DYrm2GIxi2iY8fbpY';
 
 const client = new Discord.Client();
 
-const swords = ['fuck' , 'shit' , 'ass' , 'fucx' , 'fucxing' , 'fucking' , 'dumb' , 'study'];
+const swords = ['fuck' , 'shit' , 'ass' , 'fucx' , 'fucxing' , 'fucking' , 'dumb' , 'study' , 'frick' , 'uck'];
 const lmaos = ['lmao' , 'lmfao' , 'lnao' , 'Imao' , 'Imfao' , 'Inao'];
 //replace words with actual words that you want to send warning to
 //replace warning with any warning but I think the current warning is pretty good
 client.on('message', (msg) => {
-    console.log(' Am I here ? '+swords[0]);
+    console.log(' ActivityMonitor >>> '+swords[0]);
     for (i=0; i<swords.length; i++) {
         if (msg.content.indexOf(swords[i]) > -1) {
             msg.channel.send(`Not On My Christian Discord Server ${msg.author}`);
@@ -18,7 +18,7 @@ client.on('message', (msg) => {
 });
 
 client.on('message', (msg) => {
-    console.log(' Am I here ? '+lmaos[0]);
+    console.log(' ActivityMonitor >>> '+lmaos[0]);
     for (i=0; i<lmaos.length; i++) {
         if (msg.content.indexOf(lmaos[i]) > -1) {
             msg.channel.send(`Take Yo DUMB Ass Back ${msg.author}`);
@@ -28,7 +28,7 @@ client.on('message', (msg) => {
 });
 
 client.on('ready', () => {
-    console.log('Bot Is Officially Online');
+    console.log('Shard Running');
 });
 
 client.login(token);
