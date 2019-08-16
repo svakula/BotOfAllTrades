@@ -124,7 +124,7 @@ let ytResultAdd = []; // For storing !add command choice
 let re = /^(?:[1-5]|0[1-5]|10)$/; // RegEx for allowing only 1-5 while selecting song from yt results
 let regVol = /^(?:([1][0-9][0-9])|200|([1-9][0-9])|([0-9]))$/; // RegEx for volume control
 let youtubeSearched = false; // If youtube has been searched (for !add command)
-let selectUser; // Selecting user from guild
+let selectUser; // Selecting user from sssss
 
 bot.on("ready", async () => {
 	console.log(`Bot is ready! ${bot.user.username}`);
@@ -231,17 +231,18 @@ bot.on("message", async message => {
 			if (queue.length === 1) {
 				message.reply("queue is empty now, type !play [song name] or !yt [song name] to play/search new songs!");
 				dispatcher.end();
-				setTimeout(() => voiceChannel.leave(), 1000);
+    
+				setTimeout(() => message.member.voiceChannel.leave(), 1000);
 			} else {
 				if (skippers.indexOf(message.author.id) === -1) {
 					skippers.push(message.author.id);
 					skipRequest++;
 
-					if (skipRequest >= Math.ceil((voiceChannel.members.size - 1) / 2)) {
+					if (skipRequest >= Math.ceil((message.member.voiceChannel.members.size - 1) / 2)) {
 						skipSong(message);
 						message.reply("your skip has been added to the list. Skipping!");
 					} else {
-						message.reply(`your skip has been added to the list. You need **${Math.ceil((voiceChannel.members.size - 1) / 2) - skipRequest}** more to skip current song!`);
+						message.reply(`your skip has been added to the list. You need **${Math.ceil((message.member.voiceChannel.members.size - 1) / 2) - skipRequest}** more to skip current song!`);
 					}
 				} else {
 					message.reply("you already voted to skip!");
@@ -304,7 +305,7 @@ bot.on("message", async message => {
 
 		case "stop":
 			dispatcher.end();
-			setTimeout(() => voiceChannel.leave(), 1000);
+			setTimeout(() => message.member.voiceChannel.leave(), 1000);
 			break;
 
 		case "yt":
@@ -382,7 +383,7 @@ bot.on("message", async message => {
 /* MUSIC CONTROL FUNCTIONS START */
 /*------------------------------*/
 function playMusic(id, message) {
-
+    
 	message.member.voiceChannel.join()
 		.then(connection => {
 			console.log("Connected...");
