@@ -18,7 +18,7 @@ const bot = new Discord.Client({
 	disableEveryone: true
 });
 
-const swords = ['fuck' , 'shit' , 'ass' , 'fucx' , 'fucxing' , 'fucking' , 'dumb' , 'study' , 'frick' , 'uck'];
+const swords = ['fuck' , 'shit' , 'ass' , 'fucx' , 'fucxing' , 'fucking' , 'dumb' , 'study' , 'frick' , 'uck', 'nigg', 'cunt', 'bitch'];
 const lmaos = ['lmao' , 'lmfao' , 'lnao' , 'Imao' , 'Imfao' , 'Inao'];
 
 const cheerio = require("cheerio");
