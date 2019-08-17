@@ -17,13 +17,9 @@ I did kinda borrow code from many other sources to create this Frankenstein's mo
 
 
 
+You can Invite the Bot to yout Server as soon as I figure out a way to host it 24/7
 
-
-
-
-
-
-
+Link will be posted when that happens
 
 
 Kill me now
