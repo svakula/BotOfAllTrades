@@ -1,7 +1,6 @@
 # BotOfAllTrades
-An Annoying-ass Bot that Calls out all the lmaos and other ways to trick the original lmao bot.
 
-It can also Search Images with the !image command and It Can Also Play Music with the !help commands for a full list of commands.
+It can Search Images with the !image command and It Can Also Play Music with the !help commands for a full list of commands.
 
 Its also useful in terms of usability. The music functionality is airtight BUT the sound quality could use some work because Node-Opus, Axios, FFMPEG and FFMPEGBinaries use depreciated versions.
 
