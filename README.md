@@ -1,25 +1,15 @@
-# DiscordAntiProfanityBot
-An Annoying-ass Bot that Calls out all the lmaos and other ways to trick the original lmao bot. Also an anti profanity filter.
+# BotOfAllTrades
+An Annoying-ass Bot that Calls out all the lmaos and other ways to trick the original lmao bot.
+
 It can also Search Images with the !image command and It Can Also Play Music with the !help commands for a full list of commands.
 
-Its also pretty cool interms of usability. The music functionality is airtight BUT the sound quality could use some work because Node-Opus, Axios, FFMPEG and FFMPEGBinaries use the old version because the code got screwed up when updated and everything concerning the music code failed.
+Its also useful in terms of usability. The music functionality is airtight BUT the sound quality could use some work because Node-Opus, Axios, FFMPEG and FFMPEGBinaries use depreciated versions.
 
 The Image search is airtight and perfect. SafeSearch is implemented so only safe pictures show up when in use.
 
-The lmao code is written so that Lmao, Lmfao, Imao, Imfao, lnao, Inao, and many more cannot be said without the call out
-
-The profanity filter also blocks many curse words by calling it out as well. The curse word deletion scrips is yet to be made
+The lmao code is written so that Lmao and many more cannot be said without the call out
 
 
-Developed almost completely by Shrijith Vakula
+most code was borrowed and I have no clue from where because it was a long time ago so if any of this is your code please know that I am sorry for not crediting you.
 
-I did kinda borrow code from many other sources to create this Frankenstein's monster of a project
-
-
-
-You can Invite the Bot to yout Server as soon as I figure out a way to host it 24/7
-
-Link will be posted when that happens
-
-
-Kill me now
+you can host it yourself as no instance of this bot exists on running servers.
